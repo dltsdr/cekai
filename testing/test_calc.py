@@ -23,3 +23,4 @@ def test_add1():
 def test_div():
     cal = Calculator()
     assert 1 == cal.div(1, 1)
+print("a")
