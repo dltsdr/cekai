@@ -9,3 +9,4 @@ def test_cart2(login):
 @pytest.mark.parametrize('a,b',[(1,2),(3,4)])
 def test_cart3(a,b):
     print("购物车用例3")
+a
