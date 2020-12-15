@@ -21,11 +21,12 @@ def teardown_function():
 
 
 class Test_Calc:
-    def setup(self):
-        self.cal = Calculator
-        print("类级别setup")
-    def teardown(self):
-        print("类级别teardowns")
+	def setup(self):
+		self.cal = Calculator
+		print("类级别setup")
+
+	def teardown(self):
+		print("类级别teardowns")
 
 
 
