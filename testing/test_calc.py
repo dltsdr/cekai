@@ -20,20 +20,25 @@ def teardown_function():
 	print("函数级别teardown")
 
 
-class Test_Calc:
-	def setup(self):
+class TestCalc():
+	def setup_class(self):
 		self.cal = Calculator
 		print("类级别setup")
 
-	def teardown(self):
+	def teardown_class(self):
 		print("类级别teardowns")
 
+	def setup(self):
+		print("setup")
 
+	def teardown(self):
+		print("teardown")
 
 	@pytest.mark.add
-	def test_add(self):
+	@pytest.mark.parametrize('a,b,result',[(1,1,2),(2,2,4)])
+	def test_add(self, a, b, result):
 		#cal = Calculator()
-		assert 2 == self.cal.add(1, 1)
+		assert result == self.cal.add(a, b)
 
 
 	@pytest.mark.add
