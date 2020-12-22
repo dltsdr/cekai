@@ -53,6 +53,11 @@ class TestCalc:
 
 
 	@pytest.mark.add
+	@pytest.mark.parametrize('a, b, result',[
+		(1,1,2),
+		(2,2,4),
+		(0.1,0.1,0.2),
+		(-1,-1,-2)],ids=['int','int','float','fushu'])
 	def test_add(self, a, b, result):
 		assert result == self.cal .add(a, b)
 
