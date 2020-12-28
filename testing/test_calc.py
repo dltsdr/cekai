@@ -1,3 +1,4 @@
+import yaml
 #实现计算机
 import sys,pytest
 sys.path.append('..')
@@ -34,6 +35,14 @@ def test_div():
 	assert 1 == cal.div(1,1)
 
 
+#取yml文件数据
+with open("datas/calc.yml") as f:
+	datas = yaml.safe_load(f)
+	myids = datas.keys()
+	mydatas = datas.values()
+
+
+
 class TestCalc:
 	def setup_class(self):
 		print("类级别setup")
@@ -53,11 +62,7 @@ class TestCalc:
 
 
 	@pytest.mark.add
-	@pytest.mark.parametrize('a, b, result',[
-		(1,1,2),
-		(2,2,4),
-		(0.1,0.1,0.2),
-		(-1,-1,-2)],ids=['int','int','float','fushu'])
+	@pytest.mark.parametrize('a, b, result',mydatas,ids=myids)
 	def test_add(self, a, b, result):
 		assert result == self.cal .add(a, b)
 
