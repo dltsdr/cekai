@@ -41,6 +41,25 @@ with open("datas/calc.yml") as f:
 	myids = datas.keys()
 	mydatas = datas.values()
 
+def get_steps():
+	with open("steps/add.yml") as f:
+		steps = yaml.safe_load(f)
+	return steps
+
+cal = Calculator()
+
+def steps(a,b,result):
+	steps1 = get_steps()
+	for step in steps1:
+		if 'add' == step:
+			assert result == cal.add(a,b)
+		elif 'add1' ==step:
+			assert result == cal.add1(a, b)
+		elif 'add2' == step:
+			assert result == cal.add2(a, b)
+
+
+
 
 
 class TestCalc:
@@ -61,14 +80,14 @@ class TestCalc:
 
 
 
-	@pytest.mark.add
+	#@pytest.mark.add
 	@pytest.mark.parametrize('a, b, result',mydatas,ids=myids)
 	def test_add(self, a, b, result):
-		assert result == self.cal .add(a, b)
+		steps(a,b,result)
 
 	def test_add1(self):
-		assert 3 == self.cal .add(1, 2)
+		assert 3 == self.cal.add(1, 2)
 
 	@pytest.mark.div
 	def test_div(self):
-		assert 1 == self.cal .div(1, 1)
+		assert 1 == self.cal.div(1, 1)

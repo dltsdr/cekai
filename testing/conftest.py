@@ -15,3 +15,9 @@ def login(request):#需要用request调用params
     #yield激活fixture teard的方法
     yield ['username','password']
     print('teardown')
+
+def pytest_collection_modifyitems(
+        session: "Session",config:"Config",items: List["Item"]
+) -> None:
+    print(items)
+    print(len(items))

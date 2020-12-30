@@ -10,5 +10,5 @@ bignum:
   - 100
   - 100
   - 200
-float: [ 0.1,0.1,0.2 ]
-myids: [ "int","int","intbig" ]
+float: [0.1, 0.1, 0.2]
+minus: [-1, -1, -2]
