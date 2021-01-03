@@ -91,3 +91,4 @@ class TestCalc:
 	@pytest.mark.div
 	def test_div(self):
 		assert 1 == self.cal.div(1, 1)
+
