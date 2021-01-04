@@ -40,6 +40,7 @@ with open("datas/calc.yml") as f:
 	datas = yaml.safe_load(f)
 	myids = datas.keys()
 	mydatas = datas.values()
+	print(myids,mydatas)
 
 def get_steps():
 	with open("steps/add.yml") as f:

@@ -1,16 +1,11 @@
 import pytest,yaml
-from func.Calc import Calculator
+from pythoncode.calc import Calculator
 
 #读取yml文件数据
 with open("./c.yml") as f:
     datas = yaml.safe_load(f)
-    #计算的数据类型
-    myids = datas.keys()
-    print(myids)
-    #计算的数值
-    mydatas = datas.values()
-    print(mydatas)
 
+print(datas["addyml"])
 
 class Testcal:
     def setup(self):
@@ -22,18 +17,21 @@ class Testcal:
 
 
     #加法
-    @pytest.mark.parametrize('a, b, result',mydatas,ids=myids)
+    @pytest.mark.parametrize("a, b, result",datas["addyml"])
     def test_add(self, a, b, result):
-         assert result == self.cal.add(a,b)
+        assert result == self.cal.add(a,b)
 
-    @pytest.mark.parametrize('a, b, result',mydatas,ids=myids)
-    def test_add(self, a, b, result):
+    #减法
+    @pytest.mark.parametrize("a, b, result",datas["subyml"])
+    def test_sub(self, a, b, result):
         assert result == self.cal.sub(a,b)
 
-    @pytest.mark.parametrize('a, b, result',mydatas,ids=myids)
-    def test_add(self, a, b, result):
+    #c乘法
+    @pytest.mark.parametrize("a, b, result",datas["multml"])
+    def test_mult(self, a, b, result):
         assert result == self.cal.mult(a,b)
 
-    @pytest.mark.parametrize('a, b, result',mydatas,ids=myids)
-    def test_add(self, a, b, result):
+    #除法
+    @pytest.mark.parametrize("a, b, result",datas["divyml"])
+    def test_div(self, a, b, result):
         assert result == self.cal.div(a,b)
