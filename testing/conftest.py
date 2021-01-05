@@ -61,3 +61,11 @@ def cmdoption(request):
     with open(datapath) as f:
         datas = yaml.safe_load(f)
     return myenv, datas
+
+#动态生成测试用例
+def pytest_generate_tests(metafunc:"Metafunc") -> None:
+    if "param" in metafunc.fixturenames:
+        metafunc.parametrize("param",
+                             metafunc.module.datas,
+                             ids=metafunc.module.myids,
+                             scope='function')
