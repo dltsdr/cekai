@@ -17,11 +17,13 @@ class Testcal:
 
 
     #加法
+    @pytest.mark.run(order=3)
     @pytest.mark.parametrize("a, b, result",datas["addyml"])
     def test_add(self, a, b, result):
         assert result == self.cal.add(a,b)
 
     #减法
+    @pytest.mark.run(order=1)
     @pytest.mark.parametrize("a, b, result",datas["subyml"])
     def test_sub(self, a, b, result):
         assert result == self.cal.sub(a,b)
