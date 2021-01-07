@@ -11,4 +11,9 @@ class Calculator:
         return a * b
 
     def div(self, a, b):
-        return a / b
+        try:
+            c = a / b
+        except IOError:
+            print("分母不可为0")
+        else:
+            return c
