@@ -46,6 +46,6 @@ class Test():
             print("电话为"+phone+"的成员添加成功")
         except BaseException as msg:
             print(msg)
-            print("电话为"+phone_find+"的成员添加失败")
+            print("电话为"+phone+"的成员添加失败")
 
 
