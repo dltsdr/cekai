@@ -1,7 +1,8 @@
 from selenium.webdriver.common.by import By
 from time import sleep
-from web_auto.test_wework.add_member import AddMember
-from web_auto.test_wework.base_page import BasePage
+#from web_auto.test_wework.add_member import AddMember
+from cekai.web_auto.test_wework.base_page import BasePage
+from cekai.web_auto.test_wework.add_member import AddMember
 
 
 class Index(BasePage):
@@ -12,15 +13,23 @@ class Index(BasePage):
         添加成员index_service_cnt_itemWrap
         :return:
         """
+        find = self.find
+        def add_member_condition(x):
+            elements_len = len(self.finds(By.ID,"username"))
+            if elements_len <= 0:
+                find(By.CSS_SELECTOR,".js_has_member>div:nth-child(1)>a:nth-child(2)").click()
+            return elements_len > 0
 
-        self._driver.find_element(By.CSS_SELECTOR,".index_service_cnt_itemWrap").click()
-        sleep(3)
+
+        find(By.CSS_SELECTOR,"#menu_contacts").click()
+        sleep(2)
+        #self.wait_for_click((By.CSS_SELECTOR,".js_has_member>div:nth-child(1)>a:nth-child(2)"))
+        self.wait_for_condition(add_member_condition).click()
         return AddMember(self._driver)
-        pass
 
     def goto_import_address(self):
         """
-        导入通讯录
+        导入通讯录x
         :return:
         """
         pass
