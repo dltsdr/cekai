@@ -33,3 +33,6 @@ class Index:
         """
         self.driver.find_element(By.CSS_SELECTOR,".index_top_operation_loginBtn").click()
         return Login(self.driver)
+
+    def goto_add_member(self):
+        pass

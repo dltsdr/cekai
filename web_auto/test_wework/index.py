@@ -1,8 +1,7 @@
 from selenium.webdriver.common.by import By
 from time import sleep
-#from web_auto.test_wework.add_member import AddMember
-from cekai.web_auto.test_wework.base_page import BasePage
-from cekai.web_auto.test_wework.add_member import AddMember
+from web_auto.test_wework.base_page import BasePage
+from web_auto.test_wework.add_member import AddMember
 
 
 class Index(BasePage):
@@ -22,7 +21,6 @@ class Index(BasePage):
 
 
         find(By.CSS_SELECTOR,"#menu_contacts").click()
-        sleep(2)
         #self.wait_for_click((By.CSS_SELECTOR,".js_has_member>div:nth-child(1)>a:nth-child(2)"))
         self.wait_for_condition(add_member_condition).click()
         return AddMember(self._driver)
