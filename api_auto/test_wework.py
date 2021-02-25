@@ -58,11 +58,10 @@ class TestWework:
         return r.json()
 
     #更新成员
-    def test_update(self,token,userid,name="柯南2",monile="13876728190"):
+    def test_update(self,token,userid,name="柯南2"):
         requests_body = {
             "userid": userid,
-            "name": name,
-            "monile":monile
+            "name": name
         }
 
         r = requests.post(f"https://qyapi.weixin.qq.com/cgi-bin/user/update?access_token={token}",
@@ -79,17 +78,16 @@ class TestWework:
     #整体测试
     @pytest.mark.parametrize("userid,name,mobile",test_create_data())
     def test_wework(self,token,userid,name,mobile):
-        userid="kenan123"
 
         try:
-            assert "created" == self.test_create(token,userid,mobile)["errmsg"]
+            assert "created" == self.test_create(token,userid,mobile,name)["errmsg"]
         except AssertionError as e:
             #__str__()提取报错信息
             if "mobile existed" in e.__str__():
                 #re正则匹配
-                re_userid = re.findall(":(.*)'$",e.__str__())[0]
+                re_userid = re.findall(":(.*)'",e.__str__())[0]
                 self.test_delete(token,re_userid)
-                assert "created" == self.test_create(token, userid, mobile)["errmsg"]
+                assert "created" == self.test_create(token, userid, mobile,name)["errmsg"]
 
         assert name == self.test_get(token,userid)["name"]
 
