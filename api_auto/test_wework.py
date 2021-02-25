@@ -1,6 +1,15 @@
-import re
+import re,random
 
 import requests,pytest
+
+
+def test_create_data():
+    "userid, name, mobile"
+    #  %08d  8个0
+    data = [("kenan" + str(x),"柯南","138%08d"%x)
+            for x in range(20)]
+    print(data)
+    return data
 
 class TestWework:
 
@@ -66,20 +75,21 @@ class TestWework:
         r = requests.get(f"https://qyapi.weixin.qq.com/cgi-bin/user/delete?access_token={token}&userid={userid}")
         return r.json()
 
+
     #整体测试
-    def test_wework(self,token):
+    @pytest.mark.parametrize("userid,name,mobile",test_create_data())
+    def test_wework(self,token,userid,name,mobile):
         userid="kenan123"
-        name = "柯南"
 
         try:
-            assert "created" == self.test_create(token,userid,"13898362734")["errmsg"]
+            assert "created" == self.test_create(token,userid,mobile)["errmsg"]
         except AssertionError as e:
             #__str__()提取报错信息
             if "mobile existed" in e.__str__():
                 #re正则匹配
                 re_userid = re.findall(":(.*)'$",e.__str__())[0]
                 self.test_delete(token,re_userid)
-                assert "created" == self.test_create(token, userid, "13898362734")["errmsg"]
+                assert "created" == self.test_create(token, userid, mobile)["errmsg"]
 
         assert name == self.test_get(token,userid)["name"]
 
@@ -88,3 +98,6 @@ class TestWework:
 
         assert "deleted" == self.test_delete(token,userid)["errmsg"]
         assert 60111 == self.test_get(token, userid)["errcode"]
+
+
+
