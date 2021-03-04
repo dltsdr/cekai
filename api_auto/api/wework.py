@@ -7,6 +7,8 @@ class WeWork(BaseApi):
     def __init__(self):
         self.token = Util().get_token()
         self.params["token"] = self.token
+        with open("../api/wework.yaml",encoding="utf-8") as f:
+            self.data = yaml.load(f)
 
 
     #创建成员
@@ -28,40 +30,40 @@ class WeWork(BaseApi):
         self.params["mobile"] = mobile
         self.params["name"] = name
         self.params["department"] = department
-        with open("../api/wework.yaml",encoding="utf-8") as f:
-            data = yaml.load(f)
-            print(data)
-        return self.send(data["create"])
+        return self.send(self.data["create"])
 
     #获取成员
     def test_get(self,userid):
 
-        data = {
-            "method": "get",
-            "url": f"https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token={self.token}&userid={userid}"}
-
-        return self.send(data)
+        # data = {
+        #     "method": "get",
+        #     "url": f"https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token={self.token}&userid={userid}"}
+        self.params["userid"] = userid
+        return self.send(self.data["get"])
 
     #更新成员
     def test_update(self,userid,name="柯南2"):
-        data = {
-            "method": "post",
-            "url": f"https://qyapi.weixin.qq.com/cgi-bin/user/update?access_token={self.token}",
-            "json": {
-                "userid": userid,
-                "name": name}
-            }
-        return self.send(data)
+        # data = {
+        #     "method": "post",
+        #     "url": f"https://qyapi.weixin.qq.com/cgi-bin/user/update?access_token={self.token}",
+        #     "json": {
+        #         "userid": userid,
+        #         "name": name}
+        #     }
+        self.params["userid"] = userid
+        self.params["name"] = name
+        return self.send(self.data["update"])
 
     #删除成员
     def test_delete(self,userid):
-
-        data = {
-            "method": "get",
-            "url": f"https://qyapi.weixin.qq.com/cgi-bin/user/delete?access_token={self.token}&userid={userid}"
-        }
-
-        return self.send(data)
+        # data = {
+        #     "method": "get",
+        #     "url": f"https://qyapi.weixin.qq.com/cgi-bin/user/delete?access_token={self.token}&userid={userid}"
+        # }
+        #
+        # return self.send(data)
+        self.params["userid"] = userid
+        return self.send(self.data["delete"])
 
 
     #整体测试

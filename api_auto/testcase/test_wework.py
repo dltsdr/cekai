@@ -1,4 +1,5 @@
 from api_auto.api.wework import WeWork
+import requests
 
 class TestWork:
     #获取成员
@@ -16,3 +17,6 @@ class TestWork:
     #删除成员
     def test_delete(self):
         print(WeWork().test_delete("kenan888"))
+
+    def test_session(self):
+        s = requests.session()
