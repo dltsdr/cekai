@@ -1,4 +1,4 @@
-import yaml
+import yaml,re
 from api_auto.api.util import Util
 from api_auto.api.baseapi import BaseApi
 
@@ -30,6 +30,7 @@ class WeWork(BaseApi):
         self.params["department"] = department
         with open("../api/wework.yaml",encoding="utf-8") as f:
             data = yaml.load(f)
+            print(data)
         return self.send(data["create"])
 
     #获取成员
