@@ -6,5 +6,4 @@ class TestToken:
         self.gettoken = GetToken()
 
     def test_get_token(self):
-
         assert self.gettoken.get_token().json()["errcode"] == 0
