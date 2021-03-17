@@ -1,0 +1,2 @@
+2021-03-16 20:23:59.331 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: testcase description, TestCase ID: 2e0c4448-1e82-4f10-a527-be38ca221809
+2021-03-16 20:23:59.347 | INFO     | httprunner.runner:__run_step:292 - run step begin: /app/folders/recent >>>>>>
