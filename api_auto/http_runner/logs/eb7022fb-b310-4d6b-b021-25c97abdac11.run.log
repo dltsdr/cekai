@@ -1,0 +1,1748 @@
+2021-03-21 20:18:59.068 | INFO     | httprunner.runner:test_start:451 - Start to run testcase: testcase description, TestCase ID: eb7022fb-b310-4d6b-b021-25c97abdac11
+2021-03-21 20:18:59.070 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/colla/message >>>>>>
+2021-03-21 20:18:59.561 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:18:59.563 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:18:59.564 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/colla/message
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "246",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Member-Id": "5704032114908086",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Request-Id": "MESSAGE:11382925:5704032114908086:5",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0",
+    "x-request-id": "2f0b74d6-0c8a-4159-9759-63cbe0a855fc",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-139072"
+}
+cookies  : {}
+body     : {
+    "context": {
+        "appVersion": "default",
+        "os": "Windows",
+        "osVersion": "NT 10.0",
+        "platform": "web"
+    },
+    "data": {},
+    "engineType": "MUBU",
+    "messageType": "UNWATCH",
+    "reqId": 5,
+    "requestId": "MESSAGE:11382925:5704032114908086:5",
+    "token": "3n-F0-lVSBJ"
+}
+
+2021-03-21 20:18:59.575 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:18:59 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9335",
+    "X-Tt-Logid": "202103212018590102121501365E31BFE2",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "QlYtW7N8sGVr3MY6PJ0js3_oxoODI38LPtcw5Y0EWRfkk1-EBwlBDgXg2VhBPLBp7DbdA59zJTzPNv6GDkqdmW3AbXkdxuHObTRwJUQX4-tLvLEYoecucF1qH5iwetLgblHrhKWe4iPToCP2DlYvM3vL10gfcq7c07Fn",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=8, tt_agw; dur=5",
+    "x-tt-trace-host": "019814a36eca7223787a6069737040b028bf726f8404d34a05d80803d193de1d7050d345f9b789a462a0ef7ea3da6c86dcc37f36e037efa889e5538b86c7e09f28bdc5a12f17f17708942e25031c866b03",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329139.560",
+    "Content-Encoding": "gzip",
+    "Via": "cache8.l2et2[35,0], vcache8.cn1716[48,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291395338346e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "code": 0,
+        "data": {
+            "roomVersion": 5
+        },
+        "messageType": "UNWATCH",
+        "requestId": "MESSAGE:11382925:5704032114908086:5",
+        "context": {
+            "appVersion": "default",
+            "os": "Windows",
+            "osVersion": "NT 10.0",
+            "platform": "web"
+        },
+        "message": "Success",
+        "reqId": "5",
+        "token": "3n-F0-lVSBJ"
+    }
+}
+
+2021-03-21 20:18:59.576 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 489.13 ms, response_length: 0 bytes
+2021-03-21 20:18:59.576 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:18:59.577 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:18:59.578 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:18:59.578 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/colla/message <<<<<<
+
+2021-03-21 20:18:59.579 | INFO     | httprunner.runner:__run_step:292 - run step begin: /app/edit/home/3n-F0-lVSBJ >>>>>>
+2021-03-21 20:19:00.430 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:00.431 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:00.432 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://mubu.com/app/edit/home/3n-F0-lVSBJ
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Cache-Control": "max-age=0",
+    "Cookie": "data_unique_id=e194d05a-fafd-45c2-9c00-244bf6d07baf; csrf_token=4cb2281b-d3e2-4c27-9c6f-6fe3c34fcfbf; SESSION=479b4faf-4ee6-476a-add7-a4ff500a39c6; language=en-US; country=US; Hm_lvt_4426cbb0486a79ea049b4ad52d81b504=1616326049; _ga=GA1.2.1032845546.1616326049; _gid=GA1.2.1424744806.1616326049; reg_from=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3D4FSUuObRaNpbrJBQJVSrUxIg6HoxHdipLZz09_GgEnG%26wd%3D%26eqid%3De48b29e400036eee0000000560572d9b; reg_entrance=https%3A%2F%2Fmubu.com%2F; reg_prepareId=178548a9f5a-178548a9f55-48e0-9e0e-c7c4c42e3175; Hm_lpvt_4426cbb0486a79ea049b4ad52d81b504=1616326074; reg_focusId=9a6746eb-8edf-48e0-9e0e-178548aa43f; Jwt-Token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw; user_persistence=f3a9ee80-a3df-444b-8019-cfefec6babe2; SLARDAR_WEB_ID=b85f1433-a7a9-4178-835b-a0779fc4e595",
+    "Host": "mubu.com",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-139580"
+}
+cookies  : {
+    "Hm_lpvt_4426cbb0486a79ea049b4ad52d81b504": "1616326074",
+    "Hm_lvt_4426cbb0486a79ea049b4ad52d81b504": "1616326049",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "SESSION": "479b4faf-4ee6-476a-add7-a4ff500a39c6",
+    "SLARDAR_WEB_ID": "b85f1433-a7a9-4178-835b-a0779fc4e595",
+    "_ga": "GA1.2.1032845546.1616326049",
+    "_gid": "GA1.2.1424744806.1616326049",
+    "country": "US",
+    "csrf_token": "4cb2281b-d3e2-4c27-9c6f-6fe3c34fcfbf",
+    "data_unique_id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "language": "en-US",
+    "reg_entrance": "https%3A%2F%2Fmubu.com%2F",
+    "reg_focusId": "9a6746eb-8edf-48e0-9e0e-178548aa43f",
+    "reg_from": "https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3D4FSUuObRaNpbrJBQJVSrUxIg6HoxHdipLZz09_GgEnG%26wd%3D%26eqid%3De48b29e400036eee0000000560572d9b",
+    "reg_prepareId": "178548a9f5a-178548a9f55-48e0-9e0e-c7c4c42e3175",
+    "user_persistence": "f3a9ee80-a3df-444b-8019-cfefec6babe2"
+}
+body     : None
+
+2021-03-21 20:19:00.433 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:00 GMT",
+    "Vary": "Accept-Encoding",
+    "X-TT-LOGID": "20210321201900010150135036130EFA5F",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "X-Download-Options": "noopen",
+    "server-timing": "inner; dur=120, cdn-cache;desc=MISS,edge;dur=11,origin;dur=208",
+    "x-tt-trace-host": "012742e7eeb454a91fa444c824449aeb5a584bbcf4fbdbe7057cc574ad9b3e08da2fbe10350f5d30df425db92007faddb7c59907092c83df1dbbcffc2cf3cc86963cc9344d773be4958abd655b27d25e4f",
+    "x-tt-trace-tag": "id=03;cdn-cache=miss;type=dyn",
+    "X-TT-TIMESTAMP": "1616329140.552",
+    "Content-Encoding": "gzip",
+    "Via": "cache21.l2cn1800[208,0], vcache9.cn2132[219,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "24f9501d16163291403646362e"
+}
+cookies  : {}
+encoding : utf-8
+content_type : text/html; charset=utf-8
+body     : <!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="icon" type="image/png" href="https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/792eh7bouloj/mubu/favicon.ico"/><link rel="stylesheet" href="//lf1-ttcdn-tos.pstatp.com/obj/mubu-assets/app-f6101bb59aa6222527b1.css" crossorigin="anonymous"/><title>loading...</title ... OMITTED 3291 CHARACTORS ...
+
+2021-03-21 20:19:00.434 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 849.66 ms, response_length: 0 bytes
+2021-03-21 20:19:00.435 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:00.436 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal text/html; charset=utf-8(str)	==> pass
+2021-03-21 20:19:00.436 | INFO     | httprunner.runner:__run_step:304 - run step end: /app/edit/home/3n-F0-lVSBJ <<<<<<
+
+2021-03-21 20:19:00.437 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/user/profile >>>>>>
+2021-03-21 20:19:00.592 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:00.593 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:00.594 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/user/profile
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "0",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0.21201",
+    "x-request-id": "47ee125a-7225-4eea-b9f7-1c7e45c1c012",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-140438"
+}
+cookies  : {}
+body     : None
+
+2021-03-21 20:19:00.595 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:00 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9410",
+    "X-Tt-Logid": "2021032120190001020402513639313F0D",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "yn9rX0RMEdSGmEyNA-H7ohOZzaaMlYMm7G4HthL8D4hlwbwrxod9zet2m6XlQc9gDJ7X0mAXgo9kOTKRrgM3kZ4_pk0joGBcjPHgKjEW5gj5x2L-T5p7ewYpcXGVWCgZ2VhfN7x0n8SD-k6i962ywsW-y2_qjwSRXnru",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=23, tt_agw; dur=22",
+    "x-tt-trace-host": "013050235967701aeea95943127b87f9000dc46d6b6e3c15ec273b87737e1ce645e4e5c95ee71a059e4871fd8ba1660fd65c855825c73ad238e20328e2d538a299062a315065900dae9e7ff83babdb8711",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329140.654",
+    "Content-Encoding": "gzip",
+    "Via": "cache48.l2ea120-6[50,0], vcache8.cn1716[57,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291406131620e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "expert": false,
+        "setEncryptPassword": false,
+        "level": 1,
+        "student": 0,
+        "photo": "photo/DEFAULT-AVATAR-9933f49c-8adf-4546-8e6c-15c1843718dc.jpg",
+        "wxId": "",
+        "passSecure": true,
+        "sort": "time",
+        "qqId": "",
+        "sermon": false,
+        "view": "grid",
+        "phone": "15850748167",
+        "inviteCount": 0,
+        "name": "\u5e55\u5e03\u7528\u623748161946",
+        "id": 11382925,
+        "qqName": "",
+        "wxName": "",
+        "vipEndDate": "20210331"
+    }
+}
+
+2021-03-21 20:19:00.595 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 154.33 ms, response_length: 0 bytes
+2021-03-21 20:19:00.596 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:00.597 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:00.598 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:00.598 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/user/profile <<<<<<
+
+2021-03-21 20:19:00.599 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/list/star_relation/get >>>>>>
+2021-03-21 20:19:00.795 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:00.796 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:00.797 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://api2.mubu.com/v3/api/list/star_relation/get
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0.21201",
+    "x-request-id": "57e83db9-4a25-41c6-80f3-dfe2ea3eb79c",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-140600"
+}
+cookies  : {}
+body     : None
+
+2021-03-21 20:19:00.799 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:00 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9304",
+    "X-Tt-Logid": "202103212019000102121501332D30A78A",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "_3Jgh8WrSzLVrMBaKJYRE1JmgbffgpxE6NhpT-AHdPcqTm3tAt6cKvL1gdguRElG6Yjl0Vy2ErDVoDrWZxsf5mrPlIhUaoJ73JATCFXnuoSGvfnAn2UXM7LlF6bS4ye-DSri5g1NBWxPCooIC3zSXB_xuzWua4U1FP5u",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=11, tt_agw; dur=10",
+    "x-tt-trace-host": "019814a36eca7223787a6069737040b028711d6aef7a4200421c63b4e4f30366a273a1e1c56c60548018dda6e2edd63c1a603c1ff410b2e8f5987d1fd816f32d966d3972f882a56dbd93f36334e2b0c19f",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329140.839",
+    "Content-Encoding": "gzip",
+    "Via": "cache7.l2et2[72,0], vcache8.cn1716[79,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291407801952e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": []
+}
+
+2021-03-21 20:19:00.799 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 194.78 ms, response_length: 0 bytes
+2021-03-21 20:19:00.800 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:00.801 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:00.801 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:00.802 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/list/star_relation/get <<<<<<
+
+2021-03-21 20:19:00.803 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/list/get_all_documents_page >>>>>>
+2021-03-21 20:19:00.878 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:00.879 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:00.880 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/list/get_all_documents_page
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "13",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0.21201",
+    "x-request-id": "fff7ad46-303b-4bca-8fe5-4e13ed22123b",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-140803"
+}
+cookies  : {}
+body     : {
+    "start": ""
+}
+
+2021-03-21 20:19:00.881 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:01 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9205",
+    "X-Tt-Logid": "202103212019010102122052223130C4D5",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "ZDqKYBtGoX7J5fB5q8uFm6PytjCG9a1xwACKJfQGazB9ujVbKmW0OFHxMVbYeoT8fAfqoYRpnknB5Fby8xJlQMADNGCio_aeGp6Yagvi8elBZ0Ij1UBu26f0I7tMOKeIjFeZHJNonOmRHEBQ9wl6TDXW0edAwpo2Zfn5",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=14, tt_agw; dur=13",
+    "x-tt-trace-host": "019814a36eca7223787a6069737040b028711d6aef7a4200421c63b4e4f30366a2087e5ef8291bbe009991095d6324754f1364a22e7b97c890c9451f7e1ce8cde50a27b1c89a09b1bece00ebf6de3a3d7e",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329141.015",
+    "Content-Encoding": "gzip",
+    "Via": "cache7.l2et2[41,0], vcache8.cn1716[49,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291409842145e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "folders": [
+            {
+                "id": "2lH-0vPgUBJ",
+                "folderId": "0",
+                "name": "\u6d4b\u8bd5",
+                "userId": 11382925,
+                "createTime": 1616326271965,
+                "updateTime": 1616326390207,
+                "deleted": 0,
+                "deleteTime": 0,
+                "version": 1616326390207,
+                "commitClient": "web",
+                "encrypted": 0,
+                "stared": 0,
+                "starIndex": 0,
+                "bgImgId": 0,
+                "metaVersion": 1616326390207,
+                "folderType": 0
+            }
+        ],
+        "documents": [
+            {
+                "id": "3cWG1vntDEJ~0",
+                "folderId": "0",
+                "name": "\u6b22\u8fce\u4f7f\u7528\u5e55\u5e03\uff5c\u5165\u95e8\u6307\u5357",
+                "userId": 11382925,
+                "createTime": 1615895197909,
+                "updateTime": 1615895197909,
+                "itemCount": 0,
+                "deleted": 0,
+                "deleteTime": 0,
+                "switched": 0,
+                "encrypted": 0,
+                "stared": 0,
+                "starIndex": 0,
+                "viewCount": 0,
+                "version": 1615895197909,
+                "commitClient": "web",
+                "type": 3,
+                "praiseCount": 0,
+                "commentCount": 0,
+                "rewardCount": 0,
+                "collectCount": 0,
+                "syncState": 0,
+                "openEdit": 0,
+                "collaboratorCount": 0,
+                "metaVersion": 1615895197909,
+                "isCommunityShare": 0
+            },
+            {
+                "id": "3n-F0-lVSBJ",
+                "folderId": "2lH-0vPgUBJ",
+                "name": "\u5b89\u5b89\u751f\u751f",
+                "userId": 11382925,
+                "createTime": 1616326277907,
+                "updateTime": 1616326390206,
+                "itemCount": 0,
+                "deleted": 0,
+                "deleteTime": 0,
+                "switched": 0,
+                "encrypted": 0,
+                "stared": 0,
+                "starIndex": 0,
+                "viewCount": 0,
+                "version": 1616326277907,
+                "commitClient": "web",
+                "type": 0,
+                "praiseCount": 0,
+                "commentCount": 0,
+                "rewardCount": 0,
+                "collectCount": 0,
+                "syncState": 0,
+                "openEdit": 0,
+                "collaboratorCount": 0,
+                "metaVersion": 1616326390206,
+                "isCommunityShare": 0
+            }
+        ]
+    }
+}
+
+2021-03-21 20:19:00.882 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 75.49 ms, response_length: 0 bytes
+2021-03-21 20:19:00.882 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:00.883 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:00.884 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:00.884 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/list/get_all_documents_page <<<<<<
+
+2021-03-21 20:19:00.885 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/user/current_level >>>>>>
+2021-03-21 20:19:00.985 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:00.986 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:00.987 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/user/current_level
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "30",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0.21201",
+    "x-request-id": "5aa458e6-ed71-4400-a5c4-4a1cc577d5c3",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-140886"
+}
+cookies  : {}
+body     : {
+    "document_id": "3n-F0-lVSBJ"
+}
+
+2021-03-21 20:19:00.989 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:01 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9205",
+    "X-Tt-Logid": "202103212019010102121572273D30FE59",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "DnoEie6QDwWFNlBblDOD7ixIPeSbiNhhb8-LcC6K27eHcazEZ71MyFUT2nuQzsS9SMScs0EcMeXMolmtyQDScE1yI2tFL9I7vfFQbOiyR7OOvT4f3ZsRVd2TMezm7aEqugV_ntKx6iZbs6YN8d0Jbt9p_BnJmT3wB6i0",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=19, tt_agw; dur=16",
+    "x-tt-trace-host": "013050235967701aeea95943127b87f9007b0b9336829b327e82d873d7754aab0daf788bb81de1c3e1fdb973a6ebe0ff11dd48794e139d835730f227153ecf10a3a886eab1e774d924923680097205b2a8",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329141.125",
+    "Content-Encoding": "gzip",
+    "Via": "cache32.l2ea120-6[77,0], vcache8.cn1716[83,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291410612223e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "level": 1,
+        "name": "\u5e55\u5e03\u7528\u623748161946",
+        "id": 11382925
+    }
+}
+
+2021-03-21 20:19:00.989 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 98.95 ms, response_length: 0 bytes
+2021-03-21 20:19:00.990 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:00.991 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:00.992 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:00.992 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/user/current_level <<<<<<
+
+2021-03-21 20:19:00.993 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/document/edit/get >>>>>>
+2021-03-21 20:19:01.307 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:01.308 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:01.309 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/document/edit/get
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "40",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0.21201",
+    "x-request-id": "02e03710-ef45-46a2-9982-bef7e43502f6",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-140994"
+}
+cookies  : {}
+body     : {
+    "docId": "3n-F0-lVSBJ",
+    "password": ""
+}
+
+2021-03-21 20:19:01.310 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:01 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9337",
+    "X-Tt-Logid": "20210321201901010151199101300EDDAE",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "CUbpfS90unCEmrC6D_d5sCeB6o1cRwP9syZi1mPYfleMvRGwd9ZH50yaidsF3FV2hQ0RF3v3o0HWMbbrB7YXJlJqjIFwx-W2cLBl3L7kBj1k1zQTMNdsurLnr84r9GZz0C6Wh8ghQ1fMeSr9W4fIlW6Sb0MW6yF_SCRk",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=20, tt_agw; dur=17",
+    "x-tt-trace-host": "019814a36eca7223787a6069737040b0285313b31637be35c7c822bb89a662679d6aa426367f66bb880079c131ffae40a4034a7741a07a6ca290a1fd14c90f5857d61ba57861055e41c82c1d3881f94a18",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329141.249",
+    "Content-Encoding": "gzip",
+    "Via": "cache8.l2et2[88,0], vcache8.cn1716[100,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291411702334e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "role": 31,
+        "baseVersion": 1,
+        "name": "\u5b89\u5b89\u751f\u751f",
+        "definition": "{}",
+        "directory": [
+            {
+                "name": "\u6d4b\u8bd5",
+                "id": "2lH-0vPgUBJ"
+            }
+        ]
+    }
+}
+
+2021-03-21 20:19:01.311 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 313.03 ms, response_length: 0 bytes
+2021-03-21 20:19:01.312 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:01.313 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:01.313 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:01.314 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/document/edit/get <<<<<<
+
+2021-03-21 20:19:01.315 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/list/get_all_documents_page >>>>>>
+2021-03-21 20:19:01.430 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:01.432 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:01.434 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/list/get_all_documents_page
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "13",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0.21201",
+    "x-request-id": "fff7ad46-303b-4bca-8fe5-4e13ed22123b",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-141316"
+}
+cookies  : {}
+body     : {
+    "start": ""
+}
+
+2021-03-21 20:19:01.440 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:01 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9430",
+    "X-Tt-Logid": "202103212019010101510340240E0EFC60",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "BdrthnK-DgADhO9Ufj4vnX4NZX4iz-q6oF4uLHf3J0eFsqai5zw3XqUvsF0UJ0dfQaCpZ_iBl6-H4uzJAlGI8DA9APqnTwQ4cM9FgcnawDg6xs8Pu05jTRafwHYz76L_jN4xBjORvPDKaXzs6rFvyF7IVF5s3Hhilm15",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=12, tt_agw; dur=11",
+    "x-tt-trace-host": "019814a36eca7223787a6069737040b028c487a64201874bca15a6e94bd572d99aac56968355b1abf103aadb00ce85d0ebcfb103411ea6a797241ef0a94146200bfec621b981e11fd34c8cd6c39af48975",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329141.563",
+    "Content-Encoding": "gzip",
+    "Via": "cache7.l2et2[81,0], vcache8.cn1716[88,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291414972636e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "folders": [
+            {
+                "id": "2lH-0vPgUBJ",
+                "folderId": "0",
+                "name": "\u6d4b\u8bd5",
+                "userId": 11382925,
+                "createTime": 1616326271965,
+                "updateTime": 1616326390207,
+                "deleted": 0,
+                "deleteTime": 0,
+                "version": 1616326390207,
+                "commitClient": "web",
+                "encrypted": 0,
+                "stared": 0,
+                "starIndex": 0,
+                "bgImgId": 0,
+                "metaVersion": 1616326390207,
+                "folderType": 0
+            }
+        ],
+        "documents": [
+            {
+                "id": "3cWG1vntDEJ~0",
+                "folderId": "0",
+                "name": "\u6b22\u8fce\u4f7f\u7528\u5e55\u5e03\uff5c\u5165\u95e8\u6307\u5357",
+                "userId": 11382925,
+                "createTime": 1615895197909,
+                "updateTime": 1615895197909,
+                "itemCount": 0,
+                "deleted": 0,
+                "deleteTime": 0,
+                "switched": 0,
+                "encrypted": 0,
+                "stared": 0,
+                "starIndex": 0,
+                "viewCount": 0,
+                "version": 1615895197909,
+                "commitClient": "web",
+                "type": 3,
+                "praiseCount": 0,
+                "commentCount": 0,
+                "rewardCount": 0,
+                "collectCount": 0,
+                "syncState": 0,
+                "openEdit": 0,
+                "collaboratorCount": 0,
+                "metaVersion": 1615895197909,
+                "isCommunityShare": 0
+            },
+            {
+                "id": "3n-F0-lVSBJ",
+                "folderId": "2lH-0vPgUBJ",
+                "name": "\u5b89\u5b89\u751f\u751f",
+                "userId": 11382925,
+                "createTime": 1616326277907,
+                "updateTime": 1616326390206,
+                "itemCount": 0,
+                "deleted": 0,
+                "deleteTime": 0,
+                "switched": 0,
+                "encrypted": 0,
+                "stared": 0,
+                "starIndex": 0,
+                "viewCount": 0,
+                "version": 1616326277907,
+                "commitClient": "web",
+                "type": 0,
+                "praiseCount": 0,
+                "commentCount": 0,
+                "rewardCount": 0,
+                "collectCount": 0,
+                "syncState": 0,
+                "openEdit": 0,
+                "collaboratorCount": 0,
+                "metaVersion": 1616326390206,
+                "isCommunityShare": 0
+            }
+        ]
+    }
+}
+
+2021-03-21 20:19:01.442 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 113.78 ms, response_length: 0 bytes
+2021-03-21 20:19:01.443 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:01.445 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:01.447 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:01.448 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/list/get_all_documents_page <<<<<<
+
+2021-03-21 20:19:01.449 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/message/get_message_unread >>>>>>
+2021-03-21 20:19:01.716 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:01.717 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:01.719 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/message/get_message_unread
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "11",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0.21201",
+    "x-request-id": "af822ccc-f1e5-44d9-b8a1-babb99c8dda6",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-141450"
+}
+cookies  : {}
+body     : {
+    "page": 1
+}
+
+2021-03-21 20:19:01.821 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:01 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9336",
+    "X-Tt-Logid": "20210321201901010150158217080EE053",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "9-K0DT7wxvJAqIrBtcm2r4vicPfdYs9sx_Hnc3z-vGhFO3nay_itbN0A6ApnPMpeqM4pf_P4WDGABnuD-IvLsL-Z3VHeCb5bJaWPuWy_BI_AyyDNqUGjXSUl91JNVR-Hd8NrRiNI58d-cqEJaDnDuQL9-KuwuD7LzWJs",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=12, tt_agw; dur=7",
+    "x-tt-trace-host": "019814a36eca7223787a6069737040b0285313b31637be35c7c822bb89a662679d39a972ff1e52988fce3b41cfee9badde0f4cfcde5950d2878bdde956da74cbe1ddd75dd61ea180050303f8288909d53b",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329141.697",
+    "Content-Encoding": "gzip",
+    "Via": "cache8.l2et2[78,0], vcache8.cn1716[91,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291416302793e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "unreadCount": 0
+    }
+}
+
+2021-03-21 20:19:01.823 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 265.85 ms, response_length: 0 bytes
+2021-03-21 20:19:01.825 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:01.826 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:01.828 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:01.829 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/message/get_message_unread <<<<<<
+
+2021-03-21 20:19:01.830 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/user/get_user_params >>>>>>
+2021-03-21 20:19:02.126 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:02.127 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:02.129 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/user/get_user_params
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "0",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0.21201",
+    "x-request-id": "3dc71cd8-6129-4f86-a730-0ac41b43360a",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-141831"
+}
+cookies  : {}
+body     : None
+
+2021-03-21 20:19:02.131 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:02 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9236",
+    "X-Tt-Logid": "202103212019020101511340491F0EFE70",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "68OSZM2hRql2Ucicle0W10h_9dnHr2FD9zQbG9KwDR1btNrDeoQkFLMnrmYQptLxoFLXaO1Oh4K3QB9ZqxuiatijTS18-45s3rmJJsGOhJKNH2JE42OH2vVAhMMN8-oC65v4Hc51UD31Nuz4NryQDOPWG7zX4gzOx3bC",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=11, tt_agw; dur=9",
+    "x-tt-trace-host": "01725687248099bcb3ac82b4201209901f18d503dc5f64191acbf48d4407f0504190be07f671d4ae6493facd5e8c3d388f11989b5a68f852ec18236f155a6cf23892759de759a8133860d4774623b26754",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329142.075",
+    "Content-Encoding": "gzip",
+    "Via": "cache55.l2ea120-6[75,0], vcache8.cn1716[82,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291420113265e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "source": "",
+        "ABVersionsId": ""
+    }
+}
+
+2021-03-21 20:19:02.132 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 294.21 ms, response_length: 0 bytes
+2021-03-21 20:19:02.132 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:02.134 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:02.135 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:02.136 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/user/get_user_params <<<<<<
+
+2021-03-21 20:19:02.139 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/list/item_count >>>>>>
+2021-03-21 20:19:02.273 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:02.274 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:02.275 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/list/item_count
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "33",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0.21201",
+    "x-request-id": "ac35c9cf-16ec-4a3c-8db4-1d8273e1702b",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-142141"
+}
+cookies  : {}
+body     : {
+    "folderId": 0,
+    "source": "home"
+}
+
+2021-03-21 20:19:02.282 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:02 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9430",
+    "X-Tt-Logid": "20210321201902010150179227350ED5CE",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "EbrdwwdVLL4YNqkhJhUz4SWm_bhkPS8fUP__7uJXOTAho1Cf5MI6RKdPj3-PXSkCD0Swhs9rViwruer4BDxywLqCU-bqrMb-caF5Gjm0jHe1V3YyfGTuf96gszYRhCwxL2CjOrC_Ee6wfzvfzPUqKfEKdWdR1fP199XG",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=8, tt_agw; dur=8",
+    "x-tt-trace-host": "019814a36eca7223787a6069737040b028c487a64201874bca15a6e94bd572d99aac2fc41dd7e7de8cfc51ea646abf590c08a33effa2f30d718867d1f8ad02a6e6e767c13f02ce58d9d3852d501b2acfbc",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329142.416",
+    "Content-Encoding": "gzip",
+    "Via": "cache7.l2et2[88,0], vcache8.cn1716[119,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291423163632e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "folder": {},
+        "doc": {
+            "3cWG1vntDEJ~0": 24
+        }
+    }
+}
+
+2021-03-21 20:19:02.284 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 132.64 ms, response_length: 0 bytes
+2021-03-21 20:19:02.284 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:02.285 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:02.287 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:02.289 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/list/item_count <<<<<<
+
+2021-03-21 20:19:02.290 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/refer/doc/list >>>>>>
+2021-03-21 20:19:02.435 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:02.436 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:02.438 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/refer/doc/list
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "30",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-request-id": "33b2f975-4fa7-4da2-86b1-fd02b4ee5558",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-142291"
+}
+cookies  : {}
+body     : {
+    "targetDocId": "3n-F0-lVSBJ"
+}
+
+2021-03-21 20:19:02.532 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:02 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9355",
+    "X-Tt-Logid": "20210321201902010150130140070F02DC",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "GLROEqJlOL1_taM8h0PhQxlL-75pohzRZ_vtjaVqVYTwGg9Ywoh5BpHgR1b-v6-my49DiKxHzR1VYvixi7G-exQyfUxoZQ6CW5Q7TgNBEnekEAIJAejdkwnafiWmAAVmGQKL0TlseGty3i7M0raOjyeuItcFGB_ZwULo",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=8, tt_agw; dur=7",
+    "x-tt-trace-host": "01725687248099bcb3ac82b4201209901fbf1671c6dd90d4ed8bac16ebbc02990f76a064a002af08c911d4f496e536a68688d7e1dd7b9657f82d52395694b50bcc45ed58a205c1490cfb9dc13976d9d91e",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329142.534",
+    "Content-Encoding": "gzip",
+    "Via": "cache32.l2ea120-6[73,0], vcache8.cn1716[79,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291424743756e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "list": []
+    }
+}
+
+2021-03-21 20:19:02.533 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 142.92 ms, response_length: 0 bytes
+2021-03-21 20:19:02.534 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:02.535 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:02.536 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:02.538 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/refer/doc/list <<<<<<
+
+2021-03-21 20:19:02.539 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/colla/register >>>>>>
+2021-03-21 20:19:02.944 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:02.946 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:02.948 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://api2.mubu.com/v3/api/colla/register
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-request-id": "15c4291f-ba48-4d05-8102-a3a58bec6574",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-142540"
+}
+cookies  : {}
+body     : None
+
+2021-03-21 20:19:02.960 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:02 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9393",
+    "X-Tt-Logid": "20210321201902010150138159140EF8B4",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "l9aZE1av3jdsK6tSMLzQJJbubJTUYtmzKAClWdUORbFmyNPuwRMzJV6yEen5_AZruHiyLqh18w5IqHxUd73QZc9w8CjJ3sU5a_VQ8I7vabluZsFLZLy3r6IpRsy18BiyY2ckeW31MDFBjn0ivIvAq-FqRwP7CgqzHHY=",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=8, tt_agw; dur=7",
+    "x-tt-trace-host": "01725687248099bcb3ac82b4201209901fbf1671c6dd90d4ed8bac16ebbc02990f994496dfd16c3e8141f48919f91dd79d19be0f922e34fea9234e66673043d740d8fb3fee3ae2276d3cb017be0d5687d3",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329142.780",
+    "Content-Encoding": "gzip",
+    "Via": "cache32.l2ea120-6[78,0], vcache8.cn1716[84,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291427154165e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "ticket": "d0688035bce53b6e198539937331db70",
+        "TTL": 604800
+    }
+}
+
+2021-03-21 20:19:02.963 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 404.18 ms, response_length: 0 bytes
+2021-03-21 20:19:02.964 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:02.965 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:02.966 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:02.967 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/colla/register <<<<<<
+
+2021-03-21 20:19:02.968 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/refer/node/count >>>>>>
+2021-03-21 20:19:03.066 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:03.067 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:03.068 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/refer/node/count
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "30",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0.21201",
+    "x-request-id": "9b3f30bf-6a16-4aca-90f7-331c84db4fe4",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-142969"
+}
+cookies  : {}
+body     : {
+    "targetDocId": "3n-F0-lVSBJ"
+}
+
+2021-03-21 20:19:03.078 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:03 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9337",
+    "X-Tt-Logid": "20210321201903010151100165130EE81F",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "WB0T67sXSCJzVvi0Yp2FdZmKI7eso-RNY-w2eYmm1bIgSWGNhfrG6xRHeKKxWVY0PjbT1qgdCxJ9Mt6suXiBEbzFYVPbfYgIEYlilgWWD5XBa0FAemkA9z1U8Fg3uImvzrRqtqEhz-9Fhpw0xhQ7iJZs7EgdwjnfOK2_",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=6, tt_agw; dur=5",
+    "x-tt-trace-host": "01725687248099bcb3ac82b4201209901f18d503dc5f64191acbf48d4407f050416e8b9144f777e9c57b86b67e30fc5727c8323904da251370df2577b8c9ef4e51bfb7b8b7bda9e46efc28dc2cba09db98",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329143.208",
+    "Content-Encoding": "gzip",
+    "Via": "cache55.l2ea120-6[72,0], vcache8.cn1716[79,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291431484770e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "countMap": {}
+    }
+}
+
+2021-03-21 20:19:03.082 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 96.27 ms, response_length: 0 bytes
+2021-03-21 20:19:03.085 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:03.089 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:03.096 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:03.100 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/refer/node/count <<<<<<
+
+2021-03-21 20:19:03.103 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/colla/message >>>>>>
+2021-03-21 20:19:03.175 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:03.178 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:03.182 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/colla/message
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "439",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Member-Id": "1192450140597127",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Request-Id": "MESSAGE:11382925:1192450140597127:1",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0",
+    "x-request-id": "948b5515-55ee-4ff1-948a-6f23ea811c01",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-143106"
+}
+cookies  : {}
+body     : {
+    "context": {
+        "appVersion": "default",
+        "os": "Windows",
+        "osVersion": "NT 10.0",
+        "platform": "web"
+    },
+    "data": {
+        "message": {
+            "cursor": {
+                "anchorId": "",
+                "anchorNodeType": "title",
+                "anchorOffset": 0,
+                "focusId": "",
+                "focusNodeType": "title",
+                "focusOffset": 0
+            },
+            "documentId": "3n-F0-lVSBJ",
+            "type": "CURSOR"
+        }
+    },
+    "engineType": "MUBU",
+    "messageType": "BROADCAST",
+    "reqId": 1,
+    "requestId": "MESSAGE:11382925:1192450140597127:1",
+    "token": "3n-F0-lVSBJ"
+}
+
+2021-03-21 20:19:03.187 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:03 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9382",
+    "X-Tt-Logid": "202103212019030101501390402A0EF431",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "fP-iddcpIsUTIu1QtShgW4upTNNMgvE1Jl4IZRUdYwEpBZWv5iUpOuVNlwNHuDqZG0ZtOWZ9-kwMR3R4vZWaZphiVFP7OUjUkvbJT4lhYGeLf4hf6wQOiSohGxiYAUizekXSmqbf5o2ap0AKESMiTMofiNOUtz8dFmAV",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=8, tt_agw; dur=5",
+    "x-tt-trace-host": "0176e09f1a4061a0b7d020aa825329f95ee2dfc74dba8059650706c34976d49636a22194cb85f709149120d484581aef1d0e34d943f8cb318f8a973c53a95cc966a4f1785d26be31ba1b6480a61ea19fc9",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329143.318",
+    "Content-Encoding": "gzip",
+    "Via": "cache32.l2ea120-6[43,0], vcache8.cn1716[51,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291432844943e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "code": 0,
+        "messageType": "BROADCAST",
+        "data": {
+            "ack": {
+                "code": 0,
+                "documentId": "3n-F0-lVSBJ",
+                "message": "Success",
+                "userId": 11382925,
+                "memberId": 1192450140597127
+            }
+        },
+        "requestId": "MESSAGE:11382925:1192450140597127:1",
+        "context": {
+            "appVersion": "default",
+            "os": "Windows",
+            "osVersion": "NT 10.0",
+            "platform": "web"
+        },
+        "message": "Success",
+        "reqId": "1",
+        "token": "3n-F0-lVSBJ"
+    }
+}
+
+2021-03-21 20:19:03.192 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 68.37 ms, response_length: 0 bytes
+2021-03-21 20:19:03.195 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:03.197 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:03.199 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:03.202 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/colla/message <<<<<<
+
+2021-03-21 20:19:03.205 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/colla/members >>>>>>
+2021-03-21 20:19:03.333 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:03.334 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:03.336 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://api2.mubu.com/v3/api/colla/members?documentId=3n-F0-lVSBJ&memberId=1192450140597127
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Request-Id": "members:1192450140597127:1616326375649",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-request-id": "7313e42d-f685-4387-8b36-e3c9bf7ac786",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-143208"
+}
+cookies  : {}
+body     : None
+
+2021-03-21 20:19:03.338 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:03 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9336",
+    "X-Tt-Logid": "202103212019030101501611565F104A5A",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "bAI1OltSEjSdTOVUaDVCxW2cZNxKjoexitM4wcRAVMJew7SqJPlMBvm1a6sX-h0D4GyTD6gRP3DUABtdZ9fxkA1TF0VidDMdqF8Bzj2BJiBfFy196LbfgY6aKHrJpMZgiLZapuf8al20vkCxxICLe1-jvigLC3LZe09u",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=12, tt_agw; dur=14",
+    "x-tt-trace-host": "019814a36eca7223787a6069737040b028711d6aef7a4200421c63b4e4f30366a28428f36a2e8ea144eacaf41e4257e78cc6c1e7d0865fc0d47e03c508a27d50be8f7755bdeb27b0f27d7ebc31e693a67a",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329143.469",
+    "Content-Encoding": "gzip",
+    "Via": "cache7.l2et2[100,0], vcache8.cn1716[107,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291433865071e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "roomVersion": 5,
+        "events": [
+            {
+                "documentId": "3n-F0-lVSBJ",
+                "type": "ENTER",
+                "userId": 11382925,
+                "info": {
+                    "googleId": "",
+                    "gender": "",
+                    "city": "",
+                    "year": "",
+                    "remark": "",
+                    "province": "",
+                    "googleName": "",
+                    "id": 11382925,
+                    "wxName": "",
+                    "email": "",
+                    "vipEndDate": "20210331",
+                    "level": 1,
+                    "facebookId": "",
+                    "photo": "photo/DEFAULT-AVATAR-9933f49c-8adf-4546-8e6c-15c1843718dc.jpg",
+                    "updateTime": 1616326390319,
+                    "wxId": "",
+                    "appleId": "",
+                    "appleName": "",
+                    "qqId": "",
+                    "createTime": 1615895197844,
+                    "phone": "15850748167",
+                    "name": "\u5e55\u5e03\u7528\u623748161946",
+                    "anonymUserFlag": 0,
+                    "qqName": "",
+                    "facebookName": "",
+                    "larkId": ""
+                },
+                "memberId": "1192450140597127"
+            }
+        ]
+    }
+}
+
+2021-03-21 20:19:03.339 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 123.88 ms, response_length: 0 bytes
+2021-03-21 20:19:03.340 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:03.341 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:03.341 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:03.342 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/colla/members <<<<<<
+
+2021-03-21 20:19:03.343 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/colla/message >>>>>>
+2021-03-21 20:19:03.482 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:03.487 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:03.493 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/colla/message
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "411",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Member-Id": "1192450140597127",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Request-Id": "MESSAGE:11382925:1192450140597127:3",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "version": "3.0.0",
+    "x-request-id": "468f6d63-ea8a-4939-8223-abd560327b22",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-143344"
+}
+cookies  : {}
+body     : {
+    "context": {
+        "appVersion": "default",
+        "os": "Windows",
+        "osVersion": "NT 10.0",
+        "platform": "web"
+    },
+    "data": {
+        "message": {
+            "content": [
+                {
+                    "name": "nameChanged",
+                    "original": "",
+                    "title": "\u5b89\u5b89\u751f\u751f"
+                }
+            ],
+            "documentId": "3n-F0-lVSBJ",
+            "type": "CHANGE",
+            "version": 0
+        }
+    },
+    "engineType": "MUBU",
+    "messageType": "BROADCAST",
+    "reqId": 3,
+    "requestId": "MESSAGE:11382925:1192450140597127:3",
+    "token": "3n-F0-lVSBJ"
+}
+
+2021-03-21 20:19:03.498 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:03 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9337",
+    "X-Tt-Logid": "20210321201903010150132208300F28C5",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "4QIxlhCE2kInOiMiaP1XU20YzpcVTo8urwxBn9Gl_WVIgoUqf0QiPRdDLuPjSmqOSB9Iv4BOl9uY2MkagiVaJrH5aVnu5COMHfhXWFcVDdfskT4LGzfgqxydtUeY0j2LOTHuUWFEEivZxlUZdzrnMSV6AArKdYkgvIuj",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=52, tt_agw; dur=53",
+    "x-tt-trace-host": "0176e09f1a4061a0b7d020aa825329f95e181d203856ef2a66210a0acd3dc4df84095f935c5ae1cb33c7666e214da13ecb5bfe5d450544b7ad26cb886fa2649ef5f926b7d429cec882226d9ff24f2d1146",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329143.626",
+    "Content-Encoding": "gzip",
+    "Via": "cache55.l2ea120-6[116,0], vcache8.cn1716[124,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291435185199e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "code": 0,
+        "messageType": "BROADCAST",
+        "data": {
+            "ack": {
+                "applyVersion": 0,
+                "code": 0,
+                "latestVersion": 2,
+                "documentId": "3n-F0-lVSBJ",
+                "message": "Success",
+                "userId": 11382925,
+                "memberId": 1192450140597127
+            }
+        },
+        "requestId": "MESSAGE:11382925:1192450140597127:3",
+        "context": {
+            "appVersion": "default",
+            "os": "Windows",
+            "osVersion": "NT 10.0",
+            "platform": "web"
+        },
+        "message": "Success",
+        "reqId": "3",
+        "token": "3n-F0-lVSBJ"
+    }
+}
+
+2021-03-21 20:19:03.502 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 138.14 ms, response_length: 0 bytes
+2021-03-21 20:19:03.505 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:03.507 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:03.509 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:03.511 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/colla/message <<<<<<
+
+2021-03-21 20:19:03.512 | INFO     | httprunner.runner:__run_step:292 - run step begin: /v3/api/refer/search_refers >>>>>>
+2021-03-21 20:19:03.633 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-03-21 20:19:03.634 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-03-21 20:19:03.637 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api2.mubu.com/v3/api/refer/search_refers
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "77",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "api2.mubu.com",
+    "Jwt-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTEzODI5MjUiLCJleHAiOjE2MTg5MTgxMDAsImlhdCI6MTYxNjMyNjEwMH0.E5gckvXsTrpVxseYHFsKazIsso34iRn7vlIVK0C_sdqmQwWkqL0EowWMDBGhr-9X3cldnV4mmlzmWFylHJVImw",
+    "Origin": "https://mubu.com",
+    "Referer": "https://mubu.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "data-unique-id": "e194d05a-fafd-45c2-9c00-244bf6d07baf",
+    "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-request-id": "e7f76863-d0f1-49b5-8c9f-d43e59f3b56d",
+    "HRUN-Request-ID": "HRUN-eb7022fb-b310-4d6b-b021-25c97abdac11-143514"
+}
+cookies  : {}
+body     : {
+    "docId": "3n-F0-lVSBJ",
+    "keywords": "\u5b89\u5b89\u751f\u751f",
+    "option": 1
+}
+
+2021-03-21 20:19:03.640 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Sun, 21 Mar 2021 12:19:03 GMT",
+    "Vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,HEAD,PUT",
+    "access-control-max-age": "86400",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "X-request-Id,x-requested-with,jwt-token,request-id,member-id,Content-Type,X-FILENAME,data-unique-id,AB-Server-Version,Device-Id,token,Channel-Id,channel,system,platform,Channel-Name,version,mubu-app,mubu-desktop,Checksum,user-agent,Origin,Accept",
+    "x-application-context": "mubu.biz.openapi:online.cn:9355",
+    "X-Tt-Logid": "20210321201903010151140038420EDE14",
+    "x-envoy-response-flags": "-",
+    "X-Agw-Info": "T_pv66Emzbneck3Ss8h-geF_94vU81iR42X0gpTJkOk192aNPmxh4dknqLundNS2mOAnlsU9AXvAqrwdRM-6_PQDz4xi5NSOVtZkKXHzLOidGSoDKcJ3fJkJrQx4Cw7B51qUYlTVI3sNda8eAYipbZx5FC-v8SBt-4lu",
+    "X-TRANS-LEVEL": "0",
+    "Server-Timing": "inner; dur=18, tt_agw; dur=17",
+    "x-tt-trace-host": "019814a36eca7223787a6069737040b028bf726f8404d34a05d80803d193de1d709f9fa71e518a017a3f44447487455c9a0137ff877e79a39356d1cb70828befebb2b2aca864236b36c4037c594684aca9",
+    "x-tt-trace-tag": "id=3;cdn-cache=miss",
+    "X-TT-TIMESTAMP": "1616329143.774",
+    "Content-Encoding": "gzip",
+    "Via": "cache8.l2et2[90,0], vcache8.cn1716[104,0]",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "da621f9c16163291436915363e"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "list": []
+    }
+}
+
+2021-03-21 20:19:03.641 | INFO     | httprunner.client:request:218 - status_code: 200, response_time(ms): 118.87 ms, response_length: 0 bytes
+2021-03-21 20:19:03.642 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-03-21 20:19:03.643 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-03-21 20:19:03.644 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2021-03-21 20:19:03.645 | INFO     | httprunner.runner:__run_step:304 - run step end: /v3/api/refer/search_refers <<<<<<
+
